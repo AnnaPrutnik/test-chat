@@ -1,0 +1,33 @@
+.avatar {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.image {
+  display: block;
+  border-radius: 50%;
+  width: 40px;
+  height: 100%;
+  background-color: #e5e7e9;
+  object-fit: cover;
+}
+
+.status {
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+  border-radius: 50%;
+}
+
+.online {
+  composes: status;
+  border: 1px solid #27ae60;
+}
+
+.offline {
+  composes: status;
+  border: 1px solid #e74c3c;
+}

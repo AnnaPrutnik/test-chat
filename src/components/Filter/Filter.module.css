@@ -1,0 +1,28 @@
+.container {
+  background-color: transparent;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  padding-left: 30px;
+  padding-right: 10px;
+  color: #839192;
+  border: 1px solid #ccd1d1;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: Roboto;
+}
+
+.label {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}

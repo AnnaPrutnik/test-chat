@@ -1,0 +1,40 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d6eaf8;
+}
+
+.form {
+  width: 450px;
+  height: 200px;
+  border: 2px solid #2980b9;
+  border-radius: 20px;
+  background-color: #ebf5fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #2980b9;
+}
+
+.btn {
+  background-color: #eaecee;
+  border: 2px solid #2980b9;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  margin-left: 5px;
+}

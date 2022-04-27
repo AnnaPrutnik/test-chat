@@ -1,0 +1,59 @@
+.line {
+  padding: 5px;
+}
+.answer {
+  composes: line;
+  display: flex;
+  text-align: left;
+}
+
+.own {
+  composes: line;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.avatar {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.msg {
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.textAnswer {
+  composes: msg;
+  background-color: #2e4053;
+  color: #fff;
+}
+
+.textOwn {
+  composes: msg;
+  background-color: #ccd1d1;
+}
+
+.date {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .line {
+    padding: 15px;
+  }
+
+  .msg {
+    padding: 15px;
+  }
+}

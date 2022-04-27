@@ -1,0 +1,100 @@
+[
+  {
+    "id": "1us",
+    "userName": "Alice Freeman",
+    "avatar": "https://i.pinimg.com/736x/2d/29/2c/2d292ce92691e4402d6c83c1bb76392c.jpg",
+    "isOnline": true,
+    "conversations": [
+      {
+        "id": "1us1ch",
+        "text": "You are the worst",
+        "isOwnMsg": true,
+        "date": "2022-01-15T14:00:57+03:00"
+      }
+    ]
+  },
+  {
+    "id": "2us",
+    "userName": "Josefina",
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTapja9rRevIfF54N8Ltr-N2b7-teTnBEwZpw&usqp=CAU",
+    "isOnline": true,
+    "conversations": [
+      {
+        "id": "2us1ch",
+        "text": "Quickly come to the meeting room 1B, we have a big server issue",
+        "isOwnMsg": true,
+        "date": "2022-03-20T10:32:57+03:00"
+      },
+      {
+        "id": "2us2ch",
+        "text": "I'm having breakfast right now, can't you wait for 10 minutes?",
+        "isOwnMsg": false,
+        "date": "2022-03-20T10:35:57+03:00"
+      },
+      {
+        "id": "2us3ch",
+        "text": "We are losing money! Quick!",
+        "isOwnMsg": true,
+        "date": "2022-03-25T10:40:57+03:00"
+      }
+    ]
+  },
+  {
+    "id": "3us",
+    "userName": "Velazquez",
+    "avatar": "data:image/jpeg;base64,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",
+    "isOnline": false,
+    "conversations": [
+      {
+        "id": "3us1ch",
+        "text": "Quickly come to the meeting room 1B, we have a big server issue",
+        "isOwnMsg": true,
+        "date": "2022-04-25T14:32:57+03:00"
+      }
+    ]
+  },
+  {
+    "id": "4us",
+    "userName": "Melany Griffit",
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTidibeXHq0VEYTazvQSDgG621VieJOJhO9Eg&usqp=CAU",
+    "isOnline": true,
+    "conversations": [
+      {
+        "id": "4us1ch",
+        "text": "I don't think it's working",
+        "isOwnMsg": true,
+        "date": "2021-12-20T14:32:57+03:00"
+      },
+      {
+        "id": "4us2ch",
+        "text": "You mean your phone?",
+        "isOwnMsg": false,
+        "date": "2021-12-20T14:35:57+03:00"
+      },
+      {
+        "id": "4us3ch",
+        "text": "No...",
+        "isOwnMsg": true,
+        "date": "2021-12-20T14:36:57+03:00"
+      },
+      {
+        "id": "4us4ch",
+        "text": "I mean us... Just not working...",
+        "isOwnMsg": true,
+        "date": "2021-12-20T14:37:57+03:00"
+      },
+      {
+        "id": "4us5ch",
+        "text": "But why would we be working on Sunday yaar?",
+        "isOwnMsg": false,
+        "date": "2021-12-20T14:38:57+03:00"
+      },
+      {
+        "id": "4us6ch",
+        "text": "Oh God... I think we should just be good friends",
+        "isOwnMsg": true,
+        "date": "2021-12-20T14:39:57+03:00"
+      }
+    ]
+  }
+]
