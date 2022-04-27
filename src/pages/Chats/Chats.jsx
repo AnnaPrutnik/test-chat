@@ -37,7 +37,7 @@ export const Chats = () => {
     if (location.pathname === '/' && isNotMobile) {
       navigation(`/${dataForRender[0].id}`);
     }
-  }, [location]);
+  }, [location, isNotMobile]);
 
   const handleSignOut = () => {
     auth.signOut();
