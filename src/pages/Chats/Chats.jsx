@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 import { Avatar } from '../../components/Avatar/Avatar';
 import { Filter } from '../../components/Filter/Filter';
 import { ChatList } from '../../components/ChatList/ChatList';
-
+import { useMediaQuery } from 'react-responsive';
 import s from './Chats.module.css';
 import { useAuth } from '../../config/auth-context';
 import { useChats } from '../../config/chat-context';
@@ -17,7 +17,7 @@ export const Chats = () => {
   const auth = useAuth();
   const location = useLocation();
   const navigation = useNavigate();
-  const screenWidth = window.screen.width;
+  const isNotMobile = useMediaQuery({ query: '(min-width: 768px)' });
 
   const dataForRender = useMemo(() => {
     const normalizeFilter = filter.toLowerCase();
@@ -34,7 +34,7 @@ export const Chats = () => {
   }, [chats, filter]);
 
   useEffect(() => {
-    if (location.pathname === '/' && window.screen.width > 768) {
+    if (location.pathname === '/' && isNotMobile) {
       navigation(`/${dataForRender[0].id}`);
     }
   }, [location]);
@@ -61,7 +61,7 @@ export const Chats = () => {
           />
         </div>
       </div>
-      {screenWidth >= 768 && <Outlet />}
+      {isNotMobile && <Outlet />}
     </div>
   );
 };

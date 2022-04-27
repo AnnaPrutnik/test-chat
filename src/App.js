@@ -1,4 +1,5 @@
 import { ToastContainer } from 'react-toastify';
+import { useMediaQuery } from 'react-responsive';
 import { useAuth } from './config/auth-context';
 import { PrivateRoute } from './routes/PrivateRouter';
 import { PublicRoute } from './routes/PublicRoutes';
@@ -9,12 +10,12 @@ import { Login } from './pages/Login/Login';
 
 function App() {
   const { user } = useAuth();
-  const screenWidth = window.screen.width;
+  const isNotMobile = useMediaQuery({ query: '(min-width: 768px)' });
 
   return (
     <div className='App'>
       <Routes>
-        {screenWidth < 768 ? (
+        {!isNotMobile ? (
           <>
             <Route
               path='/'
